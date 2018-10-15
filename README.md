@@ -1,3 +1,20 @@
 # piservopantilt
 
 Initial code to control Raspberry Pi with camera setup on 2-axis servo controlled arm.
+
+## Usage
+
+```python
+from servo_control import *
+
+s = ServoControl(pan_limits=(650,2500),tilt_limits=(650,2250))
+
+# Move to 0,0
+s.min()
+
+# Move to 180,180
+s.max()
+
+# Move to specific coordinates
+s.move_to(180,0)
+```
