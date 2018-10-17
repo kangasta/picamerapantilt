@@ -1,5 +1,7 @@
 # piservopantilt
 
+[![Build Status](https://travis-ci.org/kangasta/piservopantilt.svg?branch=master)](https://travis-ci.org/kangasta/piservopantilt)
+
 Initial code to control Raspberry Pi with camera setup on 2-axis servo controlled arm.
 
 ## Usage
