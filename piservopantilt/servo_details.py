@@ -36,4 +36,4 @@ class ServoDetails(object):
 
 	@property
 	def pulsewidth(self):
-		return int(self.__pos / 180 * (self.max - self.min) + self.min)
+		return int(self.__pos / float(180) * (self.max - self.min) + self.min)
