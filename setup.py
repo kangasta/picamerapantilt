@@ -7,7 +7,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
 	name="piservopantilt",
-	version="0.1.0",
+	version="0.1.1",
 	author="Toni Kangas",
 	description="Scripts to control servos in pan-tilt configuration with Raspberry Pi",
 	long_description=long_description,
