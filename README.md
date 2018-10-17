@@ -18,3 +18,17 @@ s.max()
 # Move to specific coordinates
 s.move_to(180,0)
 ```
+
+## Testing
+
+Run unit tests with command:
+
+```bash
+python3 -m unittest discover -s piservopantilt/tst/
+```
+
+Get test coverage with commands:
+```bash
+coverage run -m unittest discover -s piservopantilt/tst/
+coverage report -m
+```
