@@ -1,0 +1,13 @@
+language: python
+python: 3.6
+install:
+- pip install -r requirements.txt
+script:
+- python -m unittest discover -s piservopantilt/tst/
+deploy:
+  provider: pypi
+  user: kangasta
+  password:
+    secure: ADzLHU0fMkRAnHY+ROED/9Sz80AHEkrCryA2fxjb9SKV5tG54yuSaoVOjWI+l5o1At+YTCg2ZaSejmC/f8tjAEuSlJhl+OYl+HIFxZS/N73Mrvs/lssMfldKF9pqOuZ289Zb9KqAg6TMkWqFuj9tFxMeYiBjvAVjaG+bvDldknqfa+wbuGZCppuCsm+QcEciDAhsf9FMm23S7YKuUi8yZ3lZ0gt+qVPFCz5TFAJwrkSrQ5ZY4YNkyb0UKMpa1qX6QRjw9dahZ5v/PPFkSqgXzr4rQKBXalQyV6cH9YbyZks/Z//jsBu9aZic3QoY4NHwclLk+Ao5UPvnUKqpa0jYnUBOoLIaZN6c1McPadi7cQR8uwVGwcp+0hbPF4JQuBwLkgLyb9Q+pRSDPCDnUTx3tnT+9W6e0bIfaDQGYWFEtm4MZCmVdelxGKhI+49PkJrCsjvawj3KUNqPCWyohH1MLJnQYkLvRIv1aLmTwNpY7iiTsW1ionQxsaOLZ0j573dp7Zoohl0kHXeKVDicLSJiocQ2+5afQ8JYOyuqHdVKiYc2AkArYZPWC4TvH94VaZLcmfSVPLF5C1PTHdBoV4waRm62k25i+tJc4LcVa3cXWZh1UTy8vUFS0AzUT4p+5b5gApnCR5wQpBbIjdB+StsA2kZukxyprqbAEKkXfm/A5WE=
+  on:
+    tags: true
