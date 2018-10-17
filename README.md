@@ -7,7 +7,7 @@ Initial code to control Raspberry Pi with camera setup on 2-axis servo controlle
 ## Usage
 
 ```python
-from servo_control import *
+from piservopantilt import ServoControl
 
 s = ServoControl(pan_limits=(650,2500),tilt_limits=(650,2250))
 
