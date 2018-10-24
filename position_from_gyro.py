@@ -5,4 +5,4 @@ sensor = mpu6050(0x68)
 
 data = sensor.get_gyro_data()
 for field in data:
-	print(field + ": " + data[field])
+	print(str(field) + ": " + str(data[field]))
