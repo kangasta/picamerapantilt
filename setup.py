@@ -7,14 +7,14 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
 	name="piservopantilt",
-	version="0.1.1",
+	version="0.2.0",
 	author="Toni Kangas",
 	description="Scripts to control servos in pan-tilt configuration with Raspberry Pi",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	url="https://github.com/kangasta/piservopantilt",
 	packages=setuptools.find_packages(),
-	scripts=["bin/piservo"],
+	scripts=["bin/pantilt"],
 	install_requires=[
 		"pigpio",
 		"resettabletimer"
